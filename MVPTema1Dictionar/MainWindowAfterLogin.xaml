@@ -1,0 +1,18 @@
+﻿<Window x:Class="MVPTema1Dictionar.MainWindowAfterLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVPTema1Dictionar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\VSProjects\MVPTema1Dictionar\MVPTema1Dictionar\Images\paper2.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0" Height="53" Width="294" FontSize="45" TextAlignment="Center" FontWeight="Bold">Dictionar</TextBlock>
+        <Button x:Name="AdminButton" Content="Modificare Dictionar" FontSize="16" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="294" Click="ModifyDictionary_Click" Height="48"/>
+        <Button x:Name="SearchButton" Content="Cautare de Cuvinte" FontSize="16" HorizontalAlignment="Center" Margin="0,238,0,0" VerticalAlignment="Top" Width="294" Click="SearchButton_Click" Height="49"/>
+        <Button x:Name="FunButton" Content="Divertisment" FontSize="16" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" Width="294" Click="FunButton_Click" Height="48"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="MVPTema1Dictionar.EditWord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Word" Height="400" Width="650">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\VSProjects\MVPTema1Dictionar\MVPTema1Dictionar\Images\paper2.jpg"/>
+        </Grid.Background>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="600" Height="311">
+            <TextBlock Text="Editeaza un cuvant" FontSize="18" FontWeight="Bold" Margin="0 0 0 20"/>
+            <TextBlock Text="Cuvant:" Margin="0 0 0 5"/>
+            <ComboBox x:Name="wordComboBox" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Word" SelectionChanged="WordComboBox_SelectionChanged" />
+            <TextBlock Text="Categorie:" Margin="0 0 0 5"/>
+            <TextBox x:Name="categoryTextBox" Margin="0 0 0 10"/>
+            <TextBlock Text="Descriere:" Margin="0 0 0 5"/>
+            <TextBox x:Name="descriptionTextBox" Margin="0 0 0 25" Height="81"/>
+            <Button Content="Salveaza" Click="SaveChanges_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

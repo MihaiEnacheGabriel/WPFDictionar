@@ -1,0 +1,16 @@
+﻿<Window x:Class="MVPTema1Dictionar.DeleteWord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Delete Word" Height="400" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\VSProjects\MVPTema1Dictionar\MVPTema1Dictionar\Images\paper2.jpg"/>
+        </Grid.Background>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButton_Click"/>
+        <StackPanel Margin="20" VerticalAlignment="Center">
+            <TextBlock Text="Select a word to delete:" Margin="0 0 0 5"/>
+            <ComboBox x:Name="wordComboBox" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Word" SelectionChanged="WordComboBox_SelectionChanged" Margin="0 0 0 10"/>
+            <Button Content="Sterge" Click="DeleteWord_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
